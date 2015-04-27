@@ -42,7 +42,7 @@ before_install:
         sudo apt-get update -q ;
         sudo apt-get install -q -y -o Dpkg::Options::=--force-confnew mysql-server ;
         sudo apt-get install netstat;
-        sudo apt-get install curl
+        sudo apt-get install curl;
       fi
     fi
 script:
