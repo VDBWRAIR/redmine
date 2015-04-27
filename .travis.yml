@@ -57,7 +57,8 @@ script:
   - phantomjs --webdriver 4444 &
   - JRUBY_OPTS=-J-Xmx1024m bundle exec rake test:${SUITE}
   - netstat -lntu
-  - curl http://localhost:3000
+  - curl http://localhost:3306
+  - curl http://localhost:22
   - cat config/database.yml
 notifications:
   email: false
